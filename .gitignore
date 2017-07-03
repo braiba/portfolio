@@ -1,0 +1,11 @@
+# Development Artifacts
+.idea
+*.log
+
+# Domain-specific config files
+config/domain/*
+
+# Build Artifacts
+vendor/
+composer.lock
+
