@@ -6,27 +6,30 @@
         <meta name="generator" content="Thomas Bickley's Bespoke Framework">
         <meta name="Description" content="Thomas Bickley's Portfolio" />
         <meta name="Keywords" content="Developer, Coder, Programmer, Portfolio, CV, Resume" />
-        <link rel="index" href="http://www.thomasbickley.co.uk/" title="THomas Bickley">
-        <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+        <link rel="index" href="http://www.thomasbickley.co.uk/" title="Thomas Bickley">
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     </head>
 
     <body>
-        <div gs-scroll-on-route-change frame="16" duration="500" id="wrapper">
-
-            <ng-include src="'views/partials/sidebar.html'"></ng-include>
-
+        <div
+            gs-scroll-on-route-change
+            frame="16"
+            duration="500"
+            id="wrapper"
+        >
             <div id="main">
                 <ng-include src="'views/partials/header.html'"></ng-include>
+
+                <ng-include src="'views/partials/menu.html'"></ng-include>
 
                 <div gs-fade-during-resolve class="content fade">
                     <ng-view></ng-view>
                 </div>
-
-                <ng-include src="'views/partials/footer.html'"></ng-include>
-
             </div>
+
+            <ng-include src="'views/partials/footer.html'"></ng-include>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>

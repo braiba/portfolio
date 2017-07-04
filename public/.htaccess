@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteBase /gs-angular/
+RewriteBase /portfolio/
 
 RewriteRule ^$ index.html [L]
 

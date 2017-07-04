@@ -20,6 +20,14 @@
                 controller: 'IndexController',
                 controllerAs: 'vm'
             })
+            .when('/cv', {
+                templateUrl: 'views/cv.html',
+                controllerAs: 'vm'
+            })
+            .when('/projects', {
+                templateUrl: 'views/projects.html',
+                controllerAs: 'vm'
+            })
             .otherwise({templateUrl: 'views/not-found.html'});
     }
 })();
