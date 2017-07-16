@@ -1,0 +1,39 @@
+<li
+    ng-class="{
+        active: vm.state.isActive,
+        disabled: vm.state.isDisabled
+    }"
+>
+    <a
+        href
+        ng-click="vm.select()"
+        ng-if="vm.icon"
+    >
+        <i
+            ng-hide="vm.state.isLoading"
+            class="fa fa-fw fa-{{ vm.icon }}"
+        ></i>
+
+        <span ng-show="vm.state.isLoading">
+            <i class="fa fa-fw fa-circle-o-notch fa-spin"></i>
+        </span>
+
+        {{ vm.label }}
+
+        <ng-transclude></ng-transclude>
+    </a>
+
+    <a
+        href
+        ng-click="vm.select()"
+        ng-if="!vm.icon"
+    >
+        {{ vm.label }}
+
+        <ng-transclude></ng-transclude>
+
+        <span ng-show="vm.state.isLoading && !vm.state.warning">
+            <i class="fa fa-fw fa-circle-o-notch fa-spin"></i>
+        </span>
+    </a>
+</li>

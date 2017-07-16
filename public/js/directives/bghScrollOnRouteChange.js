@@ -3,7 +3,7 @@
 
     angular
         .module('portfolio')
-        .directive('gsScrollOnRouteChange', Directive);
+        .directive('bghScrollOnRouteChange', Directive);
 
     Directive.$inject = ['$rootScope', '$window'];
 

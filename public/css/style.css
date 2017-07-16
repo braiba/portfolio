@@ -9,49 +9,38 @@ header {
     border-bottom: solid 1px #BBB;
     padding-left: 6px;
     color: #888;
+    margin-bottom: 18px;
+    margin-top: 24px;
 }
 
-.keyvalues {
-    list-style: none;
-    padding-left: 0;
+a {
+    text-decoration: none;
+    color: #BBB;
 }
 
-.keyvalues li {
-    margin-bottom: 2px;
+a:hover {
+    color: #444;
 }
 
-.keyvalues .key,
-.keyvalues .value {
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
+h3 {
+    font-size: 18px;
+    margin-left: 10px;
+    font-style: italic;
 }
 
-.keyvalues .key {
-    font-weight: bold;
-    text-align: right;
-}
-
-.fade {
-    opacity: 1;
-    transition: opacity 1s linear;
-    -moz-transition: opacity 1s linear;
-    -webkit-transition: opacity 1s linear;
-}
-
-.fade.faded {
-    opacity: 0.25;
+section li {
+    margin-top: 8px;
 }
 
 #wrapper {
     margin: 16px auto;
-    width: 800px;
+    width: 960px;
     position: relative;
 }
 
 #main {
     background: #FFF;
-    border: solid 1px #DDD;
+    border: solid 1px #BBB;
     padding: 14px;
 }
 
@@ -59,7 +48,6 @@ header {
     font-family: 'Acme', sans-serif;
     text-align: left;
     padding: 0 16px;
-    margin: 0;
 }
 
 #header h1,
@@ -80,6 +68,7 @@ header {
     border-width: 1px 0;
     list-style: none;
     font-size: 12pt;
+    margin: 8px 0 16px 0;
     padding: 0;
 }
 
@@ -92,16 +81,68 @@ header {
     margin-right: 4px;
 }
 
-#menu a {
-    text-decoration: none;
-    color: #BBB;
-}
-
-#menu a:hover {
-    color: #444;
-}
-
 #footer {
     text-align: center;
+    padding: 16px 0;
 }
 
+/*
+ * bghViewMenu
+ */
+.bgh-view-menu-block .menu ul {
+    border: solid 1px #DDD;
+    background: #F8F8F8;
+    list-style: none;
+    padding: 0;
+}
+
+.bgh-view-menu-block .menu ul li {
+    border: solid 1px #DDD;
+    border-width: 1px 0;
+    background: #FFF;
+    margin: 3px 0;
+}
+
+.bgh-view-menu-block .menu ul a {
+    display: block;
+    padding: 8px 12px;
+}
+
+/*
+ * bghFadeDuringResolve
+ */
+.fade {
+    opacity: 1;
+    transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+}
+
+.fade.faded {
+    opacity: 0.25;
+}
+
+/*
+ * Key-values
+ */
+.keyvalues {
+    list-style: none;
+    padding-left: 0;
+}
+
+.keyvalues li {
+    margin-bottom: 4px;
+    font-size: 10pt;
+}
+
+.keyvalues .key,
+.keyvalues .value {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.keyvalues .key {
+    font-weight: bold;
+    text-align: right;
+}

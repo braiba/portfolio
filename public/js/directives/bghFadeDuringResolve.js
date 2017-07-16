@@ -3,7 +3,7 @@
 
     angular
         .module('portfolio')
-        .directive('gsFadeDuringResolve', Directive);
+        .directive('bghFadeDuringResolve', Directive);
 
     Directive.$inject = ['$rootScope'];
 

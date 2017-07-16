@@ -1,0 +1,13 @@
+<div class="bgh-view-menu-block row">
+    <div class="menu col-xs-4">
+        <ul ng-transclude></ul>
+    </div>
+
+    <div class="viewport col-xs-8">
+        <ng-include
+            ng-repeat="(index, path) in vm.contents.viewPathMap"
+            ng-show="index === vm.tabModel"
+            src="path"
+        ></ng-include>
+    </div>
+</div>
