@@ -1,6 +1,6 @@
 body {
-    background: #DDD;
-    font: 12px arial, sans-serif;
+    background: #555;
+    font: 12pt arial, sans-serif;
     color: #5D5D5D;
 }
 
@@ -32,15 +32,21 @@ section li {
     margin-top: 8px;
 }
 
+/*
+ * Layout
+ */
 #wrapper {
     margin: 16px auto;
     width: 960px;
     position: relative;
+    padding-top: 80px;
+    background: url('../img/header.png') no-repeat;
 }
 
 #main {
     background: #FFF;
     border: solid 1px #BBB;
+    border-top: 0;
     padding: 14px;
 }
 
@@ -82,8 +88,18 @@ section li {
 }
 
 #footer {
+    color: #999;
     text-align: center;
     padding: 16px 0;
+}
+
+/*
+ * Bootstrap overrides
+ */
+.alert {
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 10px 12px;
 }
 
 /*
@@ -131,8 +147,7 @@ section li {
 }
 
 .keyvalues li {
-    margin-bottom: 4px;
-    font-size: 10pt;
+    margin-bottom: 6px;
 }
 
 .keyvalues .key,
