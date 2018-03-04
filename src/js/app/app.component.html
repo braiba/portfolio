@@ -1,0 +1,44 @@
+<div id="wrapper">
+    <div id="main">
+        <div id="header">
+            <h1>Thomas Bickley</h1>
+            <h2 style="color: #BBB;">Software Developer</h2>
+        </div>
+
+        <ul id="menu">
+            <li>
+                <a [routerLink]="['/']" class="has-icon">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/projects']" class="has-icon">
+                    <i class="fas fa-fw fa-cubes"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/cv']" class="has-icon">
+                    <i class="far fa-fw fa-file-alt"></i>
+                    <span>CV</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.github.com/braiba" class="has-icon">
+                    <i class="fab fa-fw fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+        </ul>
+
+        <router-outlet></router-outlet>
+    </div>
+
+    <div id="footer">
+        <p>Copyright &copy; Thomas Bickley 2017</p>
+    </div>
+</div>

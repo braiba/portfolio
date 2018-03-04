@@ -1,0 +1,19 @@
+ul {
+    border: solid 1px #DDD;
+    background: #F8F8F8;
+    list-style: none;
+    padding: 0;
+
+    li {
+        border-style: solid;
+        border-color: #DDD;
+        border-width: 1px 0;
+        background: #FFF;
+        margin: 3px 0;
+    }
+
+    a {
+        display: block;
+        padding: 8px 12px;
+    }
+}

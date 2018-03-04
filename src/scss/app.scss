@@ -1,0 +1,149 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    background: #555;
+    font: 12pt arial, sans-serif;
+    color: #5D5D5D;
+}
+
+header {
+    font-size: 14pt;
+    border-bottom: solid 1px #BBB;
+    padding-left: 6px;
+    color: #888;
+    margin-bottom: 18px;
+    margin-top: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #BBB;
+}
+
+a:hover,
+a:focus {
+    color: #444;
+
+    &.has-icon {
+        text-decoration: none;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+}
+
+h3 {
+    font-size: 18px;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+section li {
+    margin-top: 8px;
+}
+
+/*
+ * Layout
+ */
+#wrapper {
+    margin: 16px auto;
+    width: 960px;
+    position: relative;
+    padding-top: 80px;
+    background: url('../../src/js/assets/img/header.png') no-repeat;
+}
+
+#main {
+    background: #FFF;
+    border: solid 1px #BBB;
+    border-top: 0;
+    padding: 14px;
+}
+
+#header {
+    font-family: 'Acme', sans-serif;
+    text-align: left;
+    padding: 0 16px;
+
+    h1,
+    h2 {
+        display: inline-block;
+        margin: 0;
+        padding-right: 8px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 3em;
+        color: #000;
+    }
+}
+
+#menu {
+    border-style: solid;
+    border-color: #BBB;
+    border-width: 1px 0;
+    list-style: none;
+    font-size: 12pt;
+    margin: 8px 0 16px 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        padding: 7px 0 6px 12px;
+    }
+}
+
+#footer {
+    color: #999;
+    text-align: center;
+    padding: 16px 0;
+}
+
+/*
+ * Bootstrap overrides
+ */
+.alert {
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 10px 12px;
+}
+
+/*
+ * bghFadeDuringResolve
+ */
+.fade {
+    opacity: 1;
+    transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+}
+
+.fade.faded {
+    opacity: 0.25;
+}
+
+/*
+ * Key-values
+ */
+.keyvalues {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    .key,
+    .value {
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+    }
+
+    .key {
+        font-weight: bold;
+        text-align: right;
+    }
+}

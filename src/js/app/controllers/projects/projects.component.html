@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-4">
+        <ul>
+            <li>
+                <a [routerLink]="['/projects', 'arduino-gun']">
+                    Arduino-Based Prop Gun
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/projects', 'codenames-twitter-bot']">
+                    Codenames Twitter Bot
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/projects', 'geek-stitch']">
+                    Geek stitch website
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/projects', 'live-text-adventures']">
+                    Live Text Adventures
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/projects', 'pebble-watch-face']">
+                    Pebble Watch Face
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/projects', 'portfolio']">
+                    This Website
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-8">
+        <router-outlet></router-outlet>
+    </div>
+</div>
