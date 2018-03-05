@@ -1,19 +1,31 @@
+@import "../../../../scss/variables";
+
 ul {
-    border: solid 1px #DDD;
-    background: #F8F8F8;
+    border: solid 1px darken($secondary, 15%);
+    background: lighten($secondary, 15%);
     list-style: none;
     padding: 0;
 
     li {
         border-style: solid;
-        border-color: #DDD;
+        border-color: darken($secondary, 15%);
         border-width: 1px 0;
-        background: #FFF;
+        background-color: $white;
         margin: 3px 0;
+
+        &:hover {
+            background-color: lighten($secondary, 25%);
+        }
     }
 
     a {
+        color: $secondary;
         display: block;
         padding: 8px 12px;
+
+        &:hover {
+            color: darken($secondary, 15%);
+            text-decoration: none;
+        }
     }
 }

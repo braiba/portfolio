@@ -1,30 +1,34 @@
+@import "variables";
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+@each $technology-type, $value in $technology-types {
+    .badge-#{$technology-type} {
+        @include badge-variant($value);
+    }
+}
+
 body {
-    background: #555;
     font: 12pt arial, sans-serif;
-    color: #5D5D5D;
+    color: $gray-800;
 }
 
 header {
     font-size: 14pt;
-    border-bottom: solid 1px #BBB;
+    border-bottom: solid 1px $dark;
     padding-left: 6px;
-    color: #888;
+    color: $dark;
     margin-bottom: 18px;
     margin-top: 24px;
 }
 
-a {
-    text-decoration: none;
-    color: #BBB;
+section {
+    padding: 0 1rem;
 }
 
-a:hover,
-a:focus {
-    color: #444;
-
-    &.has-icon {
+a.has-icon {
+    &:hover,
+    &:focus {
         text-decoration: none;
 
         span {
@@ -50,15 +54,23 @@ section li {
     margin: 16px auto;
     width: 960px;
     position: relative;
-    padding-top: 80px;
+}
+
+#banner {
+    position: relative;
+    z-index: 1;
+    height: 80px;
     background: url('../../src/js/assets/img/header.png') no-repeat;
 }
 
 #main {
-    background: #FFF;
-    border: solid 1px #BBB;
+    background: $white;
+    border: solid 1px lighten(#8EB1C7, 15%);
     border-top: 0;
     padding: 14px;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 20px 0;
 }
 
 #header {
@@ -76,13 +88,17 @@ section li {
 
     h1 {
         font-size: 3em;
-        color: #000;
+        color: $dark;
+    }
+
+    h2 {
+        color: $secondary;
     }
 }
 
 #menu {
     border-style: solid;
-    border-color: #BBB;
+    border-color: $dark;
     border-width: 1px 0;
     list-style: none;
     font-size: 12pt;
@@ -93,12 +109,14 @@ section li {
         display: inline-block;
         padding: 7px 0 6px 12px;
     }
-}
 
-#footer {
-    color: #999;
-    text-align: center;
-    padding: 16px 0;
+    a {
+        color: $secondary;
+
+        &:hover {
+            color: darken($secondary, 15%);
+        }
+    }
 }
 
 /*
@@ -108,20 +126,6 @@ section li {
     font-size: 10pt;
     font-weight: bold;
     padding: 10px 12px;
-}
-
-/*
- * bghFadeDuringResolve
- */
-.fade {
-    opacity: 1;
-    transition: opacity 1s linear;
-    -moz-transition: opacity 1s linear;
-    -webkit-transition: opacity 1s linear;
-}
-
-.fade.faded {
-    opacity: 0.25;
 }
 
 /*
